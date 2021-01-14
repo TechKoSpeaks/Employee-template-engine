@@ -1,14 +1,55 @@
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+
+
+
+const util = require("util");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
+const writeFileAsync = util.promisify(fs.writeFile);
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
+
+
+
+//------------------------------------------------------------------
+//Variable for entire array
+const teamArr = [];
+
+// Prompts for Manager
+const managerQuest = [
+    {
+        type: "input",
+        message: "What is the manager's full name?"
+        name: "name"
+    },
+    {
+        type: "input",
+        message: "What is your ID number?"
+        name: "id"
+    },
+];
+
+//------------------------PROMPTS-----------------------------------//
+
+function queryManager() {
+    inquirer
+        .prompt(managerQuest)
+        .then(function (input) {
+            console.log("manager");
+            const manager = new Manager(input.name, input.id)
+            teamArr.push(manager);
+
+            createTeam();
+        });
+};
+
+
 
 
 // Write code to use inquirer to gather information about the development team members,
