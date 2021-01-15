@@ -74,12 +74,15 @@ Following installation, run this command in terminal to generate HTML:
 ![Travis Ko README Generator](./media/employee-engine.gif)
 <br />
 
-### Testing
+### Screenshots and Test
+![Working App](./media/screenshot.png)
+<br />
 ![Test Pass](./media/test-pass.png)
 <br />
-![Test Pass](./media/manager-pass.png)
+![Manager Pass](./media/manager-pass.png)
 <br />
 <br />
+
 
 ## License
 This application is under the MIT license. 
