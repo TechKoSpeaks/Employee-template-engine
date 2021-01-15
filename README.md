@@ -13,7 +13,7 @@ This is an app for building a software engineering team generator using the comm
 - [User Story](#user-story)
 - [Guidelines](#guidelines)
 - [Installation](#installation-and-test-instructions)
-- [Application](#working-application)
+- [Working Application](#working-application)
 - [License](#license)
 <br />
 
@@ -71,13 +71,13 @@ Following installation, run this command in terminal to generate HTML:
 
 ## Working Application
 
-![Travis Ko README Generator](./movies/)
+![Travis Ko README Generator](./media/employee-engine.gif)
 <br />
 
 ### Testing
-![Test Pass](./main/media/test-pass.png)
+![Test Pass](./media/test-pass.png)
 <br />
-![Test Pass](./main/media/manager-pass.png)
+![Test Pass](./media/manager-pass.png)
 <br />
 <br />
 
