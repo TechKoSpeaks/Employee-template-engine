@@ -58,6 +58,11 @@ You will need to install the npm JSON packages using the following commands in t
 <strong>npm install inquirer</strong>
 <br />
 <br />
+To run tests at any point, run the following command in terminal:
+<br />
+<strong>npm run test</strong>
+<br />
+<br />
 Following installation, run this command in terminal to generate HTML:
 <br />
 <strong>node app.js</strong>
@@ -67,6 +72,12 @@ Following installation, run this command in terminal to generate HTML:
 ## Working Application
 
 ![Travis Ko README Generator](./movies/)
+<br />
+
+### Testing
+![Test Pass](./main/media/test-pass.png)
+<br />
+![Test Pass](./main/media/manager-pass.png)
 <br />
 <br />
 
